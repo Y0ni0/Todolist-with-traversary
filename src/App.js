@@ -31,9 +31,9 @@ function App() {
 
     //Add Task
     const addTask = (task) => {
-        const id = Math.floor(Math.random() * 1000) + 1
+        const id = Math.floor(Math.random() * 10000) + 1
         const newTask = { id, ...task }
-        setTasks([...task, newTask])
+        setTasks([...tasks, newTask])
     }
     //Toggle reminder
     const toggleReminder = (id) => {
